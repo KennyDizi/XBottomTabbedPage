@@ -21,7 +21,7 @@ namespace bottomtabbedpage.iOS
 
             if (e.OldElement != null)
             {
-                Tabbed.CurrentPageChanged += CurrentPageChanged;
+                Tabbed.CurrentPageChanged -= CurrentPageChanged;
             }
         }
 
