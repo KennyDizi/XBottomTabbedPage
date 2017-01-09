@@ -9,11 +9,11 @@ using BottomNavigationBar.Listeners;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(XWellcareBottomTabbedPage), typeof(BottomBarPageRenderer))]
+[assembly: ExportRenderer(typeof(XBottomTabbedPage), typeof(BottomBarPageRenderer))]
 
 namespace bottomtabbedpage.Droid
 {
-    internal class BottomBarPageRenderer : VisualElementRenderer<XWellcareBottomTabbedPage>, IOnTabClickListener
+    internal class BottomBarPageRenderer : VisualElementRenderer<XBottomTabbedPage>, IOnTabClickListener
     {
         private BottomBar _bottomBar;
 
@@ -36,7 +36,7 @@ namespace bottomtabbedpage.Droid
         {
         }
 
-        protected override void OnElementChanged(ElementChangedEventArgs<XWellcareBottomTabbedPage> e)
+        protected override void OnElementChanged(ElementChangedEventArgs<XBottomTabbedPage> e)
         {
             base.OnElementChanged(e);
 
@@ -100,12 +100,12 @@ namespace bottomtabbedpage.Droid
             }
         }
 
-        private void InitializeElement(XWellcareBottomTabbedPage element)
+        private void InitializeElement(XBottomTabbedPage element)
         {
             PopulateChildren(element);
         }
 
-        private void PopulateChildren(XWellcareBottomTabbedPage element)
+        private void PopulateChildren(XBottomTabbedPage element)
         {
             // Unfortunately bottom bar can not be reused so we have to
             // remove it and create the new instance
@@ -235,7 +235,7 @@ namespace bottomtabbedpage.Droid
             {
                 // As we show and hide pages manually OnAppearing and OnDisappearing
                 // workflow methods won't be called by the framework. Calling them manually...
-                var basePage = _currentPage as XWellcareNativeBasePageView;
+                var basePage = _currentPage as XNativeBasePageView;
                 basePage?.SendAppearing();
             }
             renderer.ViewGroup.Visibility = ViewStates.Visible;
@@ -256,7 +256,7 @@ namespace bottomtabbedpage.Droid
         {
             if (_currentPage != null)
             {
-                var basePage = _currentPage as XWellcareNativeBasePageView;
+                var basePage = _currentPage as XNativeBasePageView;
                 basePage?.SendDisappearing();
                 var renderer = Platform.GetRenderer(_currentPage);
                 if (renderer != null)

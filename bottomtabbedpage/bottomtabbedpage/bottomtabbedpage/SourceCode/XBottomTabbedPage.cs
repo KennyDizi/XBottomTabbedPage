@@ -2,7 +2,7 @@ using Xamarin.Forms;
 
 namespace bottomtabbedpage.SourceCode
 {
-	public class XWellcareBottomTabbedPage : TabbedPage
+	public class XBottomTabbedPage : TabbedPage
 	{
 		public bool FixedMode { get; set; }
 

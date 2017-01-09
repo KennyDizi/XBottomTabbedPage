@@ -2,7 +2,7 @@
 
 namespace bottomtabbedpage.SourceCode
 {
-    public class XWellcareNativeBasePageView : ContentPage
+    public class XNativeBasePageView : ContentPage
     {
         #region for bottom bar page
 

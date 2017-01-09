@@ -43,9 +43,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SourceCode\BottomBarPageExtensions.cs" />
-    <Compile Include="SourceCode\XWellcareBottomTabbedPage.cs" />
-    <Compile Include="SourceCode\XWellcareNativeBasePageView.cs" />
-    <Compile Include="SourceCode\XWellcareNavigationPage.cs" />
+    <Compile Include="SourceCode\XBottomTabbedPage.cs" />
+    <Compile Include="SourceCode\XNativeBasePageView.cs" />
+    <Compile Include="SourceCode\XNavigationPage.cs" />
     <Compile Include="XHomeTabbedPage.cs" />
   </ItemGroup>
   <ItemGroup>

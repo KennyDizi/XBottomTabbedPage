@@ -5,7 +5,7 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ExportRenderer(typeof(XWellcareBottomTabbedPage), typeof(BottomBarPageRenderer))]
+[assembly: ExportRenderer(typeof(XBottomTabbedPage), typeof(BottomBarPageRenderer))]
 
 namespace bottomtabbedpage.iOS
 {

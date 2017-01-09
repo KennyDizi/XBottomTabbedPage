@@ -2,16 +2,16 @@ using Xamarin.Forms;
 
 namespace bottomtabbedpage.SourceCode
 {
-    public class XWellcareNavigationPage : NavigationPage
+    public class XNavigationPage : NavigationPage
     {
-        public XWellcareNavigationPage(Page root) : base(root)
+        public XNavigationPage(Page root) : base(root)
         {
             Init();
             Title = root.Title;
             Icon = root.Icon;
         }
 
-        public XWellcareNavigationPage()
+        public XNavigationPage()
         {
             Init();
         }
